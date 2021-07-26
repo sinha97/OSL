@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Multi-Step-Form</title>
+</head>
+<body>
+    <div class="container">
+        <form >
+            <div class="page-1 show" id="page1">
+                <h1>Account Information</h1>
+                <div>
+
+                    <div><label for="username">Username</label></div>
+                    <div><input type="text" id="username" required></div>
+                </div>
+                
+                <div>
+                    <div><label for="password">Password</label></div>
+                    <div><input type="password" id="password" required ></div>
+
+                </div>
+
+                <div>
+                    <div><label for="confirm-password">Confirm Password</label></div>
+                    <div><input type="password" id="confirm-password" required ></div>
+
+                </div>
+
+                <div class="next-btn">
+                    <div><button id="next" type="button">Next</button></div>
+                </div>
+
+
+            </div>
+
+            <div class="page-2" id= "p2">
+                <h1 class="heading">Educational Information</h1>
+                <div class="eduction_level">
+                    <div>
+                        <label for="Education-level">Education Level</label>
+                        <select name="education" id="eduction" required placeholder="">
+                            <option value="High school">Higher school or equivalent</option>
+                            <option value="Diploma">Diploma</option>
+                            <option value="Bachalor's">Bachalor's</option>
+                            <option value="Master's">Master's</option>
+                            <option value="Doctarate">Doctarate</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="field">Field of Study</label>
+                        <input type="text" id="field" placeholder="eg. Computer Science" required>
+                    </div>
+
+                    <div class="university">
+                        <label for="university">University</label>
+                        <input type="text" required id="university">
+                    </div>
+
+                    <div class="time">
+                        <span>Time Period</span>
+                        <input type="number" name="start-year" id="start-year" min="1980" max="2024" step="1" value="2020">
+                        <span>To</span>
+                        <input type="number" name="start-year" id="end-year" min="1980" max="2024" step="1" value="2020">
+
+                    </div>
+
+                    <div>
+                        <button class="previous" id="prevbtn" type="button">Previous</button>
+                        <button class="next" id="n2" type="button">Next</button>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="page-3" id="p3">
+                <h1>Personal Information</h1>
+                <div>
+                    <label for="job-title" required>Job Title</label>
+                    <input type="text" id="job-title">
+                </div>
+                <div>
+                    <label for="company" required>Company</label>
+                    <input type="text" id="company">
+                </div>
+
+                <div>
+                    <label for="city" required>City</label>
+                    <input type="text" id="city">
+                </div>
+
+                <div>
+                    <label for="time">Time Period</label>
+                    <input type="number" id="time" min="1987" max="2021" step="1" value="2020">
+                    <span>To</span>
+                    <input type="number" id="time2" min="1987" max="2021" step="1" value="2020">
+                </div>
+
+                <div>
+                    <button type="button" id='pp3'>previous</button>
+                    <button  id="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+
+        <script src="form.js"></script>
+    </div>
+</body>
+</html>
